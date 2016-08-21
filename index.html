@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="forms">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> 
+<script src="app.js"></script>
+
+<head>
+	<title>Check me handle</title>
+	
+ 
+</head>
+<body>
+	<div>
+		<div ng-controller="handleController">
+			<form name="ghcheck" novalidate>
+				<div>
+					<label>GitHub handle</label>
+					<input name="githubhandle" type="text" ng-model="githubhandle" size="80" githubhandle/>
+					<div ng-if="ghcheck.githubhandle.$pending">Checking GitHub handle...</div>
+				</div>
+			</form>	    		
+		</div>
+	</div>	
+
+</body>
+</html>
